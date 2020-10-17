@@ -1,0 +1,2 @@
+This program allows you to create a Championship with a year and an amount of races. It also allows
+you to create pilots (0..15) with their information. Finally it calculates the avearage time of all the pilots.
