@@ -11,12 +11,7 @@ public class Championship{
 	//Relations
 	public Pilot[] pilots;
 	
-	
-	
 
-	
-	
-	
 	//Methods
 	public Championship(int year, int races){
 		this.year=year;
@@ -28,7 +23,7 @@ public class Championship{
 		}
 	}
 	
-	public void addPilot(String name, int age, String team, double[] scores){
+	public void addPilot(String name, int age, String team, int[] scores){
 		boolean stop=false;
 		
 		for(int i=0;i<pilots.length && !stop;i++){
@@ -48,7 +43,8 @@ public class Championship{
 			}
 		}
 		return found;
-	}
+	}//end findPilot
+	
 	public String showAvearageTime(int i){
 		int avearage[]=new int[3];
 		String message="";
@@ -61,15 +57,13 @@ public class Championship{
 			}else{
 				message="";	
 			}
-			
-		
 		
 		return message;
-	}		
+	}//end showAvearageTime
 	
 	
 	public int getRaces(){
 		return races;
 	}
-
+	
 }

@@ -45,8 +45,7 @@ public class Main{
 		
 		
 	}
-
-
+			
 			showAvTime(championship1);
 		
 	
@@ -66,7 +65,7 @@ public class Main{
 	}//end Championship
 	
 	public static void registerPilot(Championship championshipx){
-		double scores[]= new double[championshipx.getRaces()];
+		int scores[]= new int[championshipx.getRaces()];
 		
 		System.out.println("Type the full name of the pilot");
 		String name=sc.nextLine();
@@ -77,7 +76,7 @@ public class Main{
 		
 		for(int i=0;i<championshipx.getRaces();i++){
 			System.out.println("Type the score on the race "+(i+1));
-			scores[i]=sc.nextDouble(); sc.nextLine();
+			scores[i]=sc.nextInt(); sc.nextLine();
 		}
 		championshipx.addPilot(name, age, team, scores);	
 	}// end registerPilot
